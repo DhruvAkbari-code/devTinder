@@ -10,4 +10,33 @@ const userCustomValidator = (req) => {
   }
 };
 
-module.exports = { userCustomValidator };
+const validateEditProfile = (req) => {
+  const allowedFields = [
+    "firstName",
+    "lastName",
+    "emailId",
+    "age",
+    "gender",
+    "about",
+    "skills",
+  ];
+  const validFiels = Object.keys(req.body).every((k) =>
+    allowedFields.includes(k),
+  );
+
+  return validFiels;
+};
+
+const passwordValidator = (req) => {
+  const allowedFields = ["password"];
+  const validFields = Object.keys(req.body).every((k) =>
+    allowedFields.includes(k),
+  );
+  return validFields;
+};
+
+module.exports = {
+  userCustomValidator,
+  validateEditProfile,
+  passwordValidator,
+};
