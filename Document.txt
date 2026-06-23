@@ -1,0 +1,14 @@
+Water Fall Model
+
+1. Requirements
+    ~ done my the project manager with the designer
+2. Design
+    ~ done my the senoir engineer (which technology and that all)
+3. Development
+    ~ then developed by the developers
+4. Testing
+    ~ tested by the testers
+5. Deployment
+    ~ deployment on the server (DevOps enginner)
+6. Maintainance
+    ~ maintaining the project
